@@ -8,9 +8,11 @@
 </head>
 <body>
     
-    <h1 class="text-center text-warning my-5 py-5 ">LA MIA PAGINA</h1>
+    <h1 class="text-center text-info my-5 py-5 ">Hello</h1>
+    <div><h2  class="text-center">{{$user}}</h2></div>
+    <div><p class="text-center">residente in {{$information}}</p></div>
     <div class="container">
-        <div><a class="btn btn-info" href="page-2">Vai a pagina 2</a></div>
+        <div><a class="btn btn-dark" href="http://127.0.0.1:8000/">Ritorna alla pagina principale!</a></div>
         
     </div>
 
