@@ -14,24 +14,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/page-2', function () {
+    return view('home');
+})->name("home");
+//questa é l url che spunterà
+Route::get('/about', function () {
 
     $user = "Luca" . " " . "Coniglio";
-    $information = "Via Degli Orti " . " N. 10";
-
+    $information = [
+        "pane",
+        "pasta",
+        "carne",
+        "coca-cola",
+        "vino",
+    ];
+    //view si rifà a views page-2
     return view('page-2',  [
 
         "user"=>$user,
         "information"=>$information,
+        "indirizzo"=>"Via degli orti",
         "numero"=>"numero 10"
 
     ]);
-})->name("page-2");;
+    //name il nome che abbiamo dato sulla pagina page-2
+    //richiamando l'intera url {{route("about")}}
+})->name("about");
 
 
-Route::get('http://127.0.0.1:8000/', function () {
-    return view('welcome');
-})->name("http://127.0.0.1:8000/");
 

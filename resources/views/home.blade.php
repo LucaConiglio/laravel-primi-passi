@@ -10,7 +10,9 @@
     
     <h1 class="text-center text-warning my-5 py-5 ">LA MIA PAGINA</h1>
     <div class="container">
-        <div><a class="btn btn-info" href="page-2">Vai a pagina 2</a></div>
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-info p-3" href="{{route("about")}}"><h3>Vai a pagina 2</h3></a>
+        </div>
         
     </div>
 
